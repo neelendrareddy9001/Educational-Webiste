@@ -10,7 +10,7 @@ const HeroSection = () => {
             <Container>
                 <Row>
                     <Col lg="6" md="6">
-                        <div className='hero__center'>
+                        <div className='hero__content'>
                             <h2 className='mb-4'>Anytime Anywere <br/> Learn on your <br/>Suitable Schedule</h2>
                             <p className='mb-4'>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.
                                 Aut saepe voluptatum earum delectus <br /> deserunt id iste,
