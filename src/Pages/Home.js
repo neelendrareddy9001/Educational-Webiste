@@ -3,6 +3,8 @@ import Header from '../components/Header/Header';
 import HeroSection from '../components/Hero-Section/Hero-section';
 import Company from '../components/Company-Section/Company';
 import AboutUs from '../components/About-Us/AboutUs';
+import Courses from '../components/Course-Section/Courses';
+
 
 const Home = () => {
     return (
@@ -11,6 +13,7 @@ const Home = () => {
             <HeroSection/>
             <Company/>
             <AboutUs/>
+            <Courses/>
         </Fragment>
     )
 }
