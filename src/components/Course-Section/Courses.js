@@ -41,7 +41,7 @@ const Courses = () => {
         <Container>
             <Row>
                 <Col lg="4">
-                    <div className='single__course__item'>
+                    {/* <div className='single__course__item'>
                         <div className='course__img'>
                             <img src={courseImg1} alt=' ' className='w-100' />
                         </div>
@@ -71,7 +71,14 @@ const Courses = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    {
+                        coursesData.map((item) => {
+                            <Col lg="4" md="6">
+                                <CourseCard key={item.id} item={item} />
+                            </Col>
+                        })
+                    }
                 </Col>
             </Row>
         </Container>
