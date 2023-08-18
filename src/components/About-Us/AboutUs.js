@@ -26,7 +26,7 @@ const AboutUs = () => {
                             </p>
 
                         <div className="about__counter">
-                            <div className=" d-flex gap-5 align-items-center">
+                            <div className=" d-flex gap-5 align-items-center justify-content-center">
                                 <div className="single__counter">
                                     <span className="counter">
                                         <CountUp start={0} end={25} duration={2} suffix="K" />
@@ -44,7 +44,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
 
-                            <div className=" d-flex gap-5 align-items-center">
+                            <div className=" d-flex gap-5 align-items-center justify-content-center my-4">
                                 <div className="single__counter">
                                     <span className="counter">
                                         <CountUp start={0} end={95} duration={2} suffix="M" />
