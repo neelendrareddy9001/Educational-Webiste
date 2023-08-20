@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Container } from "reactstrap";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   {
@@ -45,9 +46,9 @@ const Header = () => {
             <div className="nav__menu" ref={menuRef} onClick={menuToggle}>
               <ul className="nav__list">
                 {navLinks.map((item, index) => (
-                  <li key={index} className="nav__item">
+                  <link key={index} className="nav__item">
                     <a href={item.url}>{item.display}</a>
-                  </li>
+                  </link>
                 ))}
               </ul>
             </div>

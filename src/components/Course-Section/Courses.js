@@ -39,47 +39,27 @@ const coursesData = [
 const Courses = () => {
     return (
         <Container>
-            <Row>
-                <Col lg="4">
-                    {/* <div className='single__course__item'>
-                        <div className='course__img'>
-                            <img src={courseImg1} alt=' ' className='w-100' />
+            <Row className='mx-2'>
+                <Col lg="12" className='mb-5 '>
+                    <div className='course__top d-flex justify-content-center align-items-center'>
+                        <div className='course__top__left'>
+                            <h2>Our Popular Courses</h2>
+                            <p className='text-start'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit, Quae consectetur libero quod voluptatum ullam qula quas, vitae voluptatum recusdane
+                            </p>
                         </div>
-
-                        <div className='course__details'>
-                            <h6 className='course__title mb-4'>
-                                Web Design Bootcamp-2022 for Beginners
-                            </h6>
-
-                            <div className='d-flex justify-content-between align-items-center'>
-                                <p className='lesoon d-flex align-items-center gap-1'>
-                                    <i className='ri-book-open-line'></i>12 Lessons
-                                </p>
-
-                                <p className='students d-flex align-items-center gap-1'>
-                                    <i className='ri-user-line'></i>12.5k
-                                </p>
-                            </div>
-
-                            <div className='d-flex justify-content-between align-items-center'>
-                                <p className='rating d-flex align-items-center gap-1'>
-                                    <i className='ri-star-fill'></i>5.9k
-                                </p>
-
-                                <p className='enroll d-flex align-items-center gap-1'>
-                                    <a href='#'>Enroll Now</a>
-                                </p>
-                            </div>
+                        <div className='w-50 text-end'>
+                            <button className='btn'>Save All</button>
                         </div>
-                    </div> */}
-                    {
-                        coursesData.map((item) => {
-                            <Col lg="4" md="6">
-                                <CourseCard key={item.id} item={item} />
-                            </Col>
-                        })
-                    }
+                    </div>   
                 </Col>
+                {
+                        coursesData.map((item, ind) => (
+                            <Col lg="4" md="6">
+                                <CourseCard key={item.ind} item={item} />
+                            </Col>
+                        ))
+                    }
             </Row>
         </Container>
     )

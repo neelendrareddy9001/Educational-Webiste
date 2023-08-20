@@ -9,7 +9,7 @@ const AboutUs = () => {
     return (
         <section>
             <Container>
-                <Row>
+                <Row className='mx-2 d-flex flex-direction-colum'>
                     <Col lg="6" md="6">
                         <div className='about__img'>
                             <img src={aboutImg} alt="" className="w-100"></img>
